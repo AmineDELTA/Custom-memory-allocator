@@ -103,30 +103,30 @@ void my_free(void* ptr){
     coalesce_blocks(block);
 }
 
-void print_heap() {
+void print_heap(){
     block_meta* curr = heap_head;
     int i = 0;
-    while (curr) {
+    while (curr){
         printf("Block %d: addr=%p, size=%zu, free=%d\n", i, (void*)curr, curr->size, curr->free);
         curr = curr->next;
         i++;
     }
-    printf("--- END ---\n");
+    printf("-..----..-\n");
 }
 
-typedef struct { // Example
+typedef struct{ // Example
     int x, y;
 }Point;
 
 int main(){
-    void* a = my_malloc(100);
-    void* b = my_malloc(200);
-    my_free(a);
-    void* c = my_malloc(50);
+    void* a1 = my_malloc(100);
+    void* a2 = my_malloc(200);
+    my_free(a1);
+    void* a3 = my_malloc(50);
     print_heap();
 
-    my_free(b);
-    my_free(c);
+    my_free(a2);
+    my_free(a3);
     print_heap();
 
     return 0;
