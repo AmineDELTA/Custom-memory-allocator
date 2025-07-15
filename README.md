@@ -3,7 +3,7 @@
 This project is a simple memory allocator built in C as part of a personal learning journey.  
 It mimics how `malloc` and `free` work by using system calls like `mmap`, custom metadata, and a basic heap layout.
 
-It's designed to help understand how memory is requested, managed, split, reused, and freed — all from scratch.
+It's designed to help understand how memory is requested, managed, split, reused, and freed  all from scratch.
 
 ---
 
@@ -22,7 +22,7 @@ It's designed to help understand how memory is requested, managed, split, reused
 ## 📚 Key Concepts Explored
 
 - Manual memory management  
-- Heap-like structure with metadata  
+- Heap like structure with metadata  
 - Linked list traversal  
 - Fragmentation and coalescing  
 - Block splitting  
@@ -57,6 +57,6 @@ When memory is allocated, the allocator:
 
 💬 Notes
 
-This project was built to learn and understand memory allocation — not to reinvent it.
+This project was built to learn and understand memory allocation not to reinvent it.
 It’s a hands-on way to see how low-level concepts work in practice.
 It was a lot harder than expected, but worth every step.
